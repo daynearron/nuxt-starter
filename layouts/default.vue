@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h1>nav</h1>
+    <h1 class="navbar">nav</h1>
     <img src="~/assets/turt.jpg" style="width:200px;">
     <ul>
-        <li><nuxt-link to="/">Home</nuxt-link></li>
-        <li><nuxt-link to="/about">About page</nuxt-link></li>
-        <li><nuxt-link to="/resume">Resume page</nuxt-link></li>
+        <li><nuxt-link :to="{ name: 'index' }">Home</nuxt-link></li>
+        <li><nuxt-link :to="{ name: 'about' }">About page</nuxt-link></li>
+        <li><nuxt-link :to="{ name: 'resume' }">Resume page</nuxt-link></li>
     </ul>
     <nuxt/>
   </div>
@@ -55,5 +55,9 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.nuxt-link-active{
+    text-decoration: line-through;
 }
 </style>

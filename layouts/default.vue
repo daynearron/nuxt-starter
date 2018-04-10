@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>nav</h1>
+    <img src="~/assets/turt.jpg" style="width:200px;">
     <ul>
         <li><nuxt-link to="/">Home</nuxt-link></li>
         <li><nuxt-link to="/about">About page</nuxt-link></li>
